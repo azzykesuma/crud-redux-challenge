@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import TableComp from '../Component/TableComp'
-import { connect, useDispatch } from 'react-redux' 
+import { connect } from 'react-redux' 
 import { getPostList } from '../actions/userAction'
 import { Button, Container, Typography, Box } from '@mui/material';
 

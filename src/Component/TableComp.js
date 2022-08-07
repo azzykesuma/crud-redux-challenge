@@ -1,6 +1,6 @@
 import React from 'react'
 import { Table,TableBody,TableCell,TableContainer,
-    TableHead,TableRow, Paper, Button, ButtonGroup, Box  } from '@mui/material';
+    TableHead,TableRow, Paper, Button, Box  } from '@mui/material';
 
 import { connect, useDispatch } from 'react-redux';
 import { deletePost } from '../actions/userAction';

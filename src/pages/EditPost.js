@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { getDetailPost, updatePost } from '../actions/userAction';
 import { Form, Field } from 'react-final-form'
 // mui
-import {TextField,Button, Box} from '@mui/material'
+import {Button, Box} from '@mui/material'
 
 
 const mapStatetoProps = (state) => {
@@ -21,7 +21,7 @@ const EditPost = ({getPostDetail}) => {
 
   useEffect(() => {
     dispatch(getDetailPost(params.id))
-  },[])
+  })
 
   return (
     <div>

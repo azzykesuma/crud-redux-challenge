@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { connect, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import { getDetailPost } from '../actions/userAction';
@@ -19,7 +19,7 @@ const Detail = ({getPostDetail}) => {
 
     useEffect(() => {
       dispatch(getDetailPost(params.id))
-    },[])
+    })
 
 
   return (
