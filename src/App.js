@@ -1,25 +1,23 @@
 import React from 'react';
-import { Routes, Route , HashRouter} from 'react-router-dom';
+import { Routes, Route , BrowserRouter} from 'react-router-dom';
 import './App.css';
-import AddPost from './pages/AddPost';
-import Create from './pages/Create';
-import Detail from './pages/Detail';
-import EditPost from './pages/EditPost';
-import Home from './pages/Home';
+import Create from './Pages/Create';
+import Detail from './Pages/Detail';
+import EditPost from './Pages/EditPost';
+import Home from './Pages/Home';
 
 
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
       <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/edit/:id' element={<EditPost />}  /> 
-          <Route path='/add' element={<AddPost />}  /> 
           <Route path='/detail/:id' element={<Detail />}  /> 
           <Route path='/create' element={<Create />}  /> 
       </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }

@@ -31,7 +31,6 @@ const Detail = ({getPostDetail}) => {
                 <TableCell>ID</TableCell>
                 <TableCell align="center">Title</TableCell>
                 <TableCell align="center">Body</TableCell>
-                <TableCell align="center">Actions</TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>
@@ -41,14 +40,6 @@ const Detail = ({getPostDetail}) => {
                     <TableCell align="center">{getPostDetail.id}</TableCell>
                     <TableCell align="center">{getPostDetail.title}</TableCell>
                     <TableCell align="center">{getPostDetail.body}</TableCell>
-                    <TableCell align="center">
-                    <Box
-                        className='buttonLayout'
-                        >
-                        <Button sx={{ backgroundColor : '#757de8', color : '#002984'}}>Edit</Button>
-                        <Button sx={{ backgroundColor : '#757de8', color : '#002984'}}>Delete</Button>
-                    </Box>
-                    </TableCell>
                 </TableRow>
             </TableBody>
             </Table>
