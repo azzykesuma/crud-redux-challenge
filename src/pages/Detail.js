@@ -3,7 +3,7 @@ import { connect, useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom';
 import { getDetailPost } from '../actions/userAction';
 import { Table,TableBody,TableCell,TableContainer,
-    TableHead,TableRow, Paper, Button, Box  } from '@mui/material';
+    TableHead,TableRow, Paper, Button  } from '@mui/material';
 
 const mapStatetoProps = (state) => {
     return {
