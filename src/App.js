@@ -3,7 +3,7 @@ import { Routes, Route , BrowserRouter} from 'react-router-dom';
 import './App.css';
 import Create from './pages/Create';
 import Detail from './pages/Detail';
-import EditPost from './Pages/EditPost';
+import EditPost from './pages/EditPost';
 import Home from './pages/Home';
 
 
